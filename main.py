@@ -14,7 +14,6 @@ from plasmapy.simulation.particle_tracker.termination_conditions import (
 grid_length = 50
 grid = CartesianGrid(-0.1 * u.m, 0.1 * u.m, num=grid_length)
 
-
 magnet = magpy.magnet.Cuboid(polarization=(0, 0, 0.1), dimension=(0.01, 0.01, 0.01))
 positions = np.zeros((18, 3), dtype=np.float32)
 polarizations = np.zeros((18, 3), dtype=np.float32)
